@@ -1,4 +1,4 @@
-# Domoticz-Denon-Plugin
+# Domoticz-DenonEx-Plugin
 Telnet based Denon / Marantz plugin
 
 Controls a single amplifier on your network.  If you have more than one you can create multiple instances of the plugin via the Hardware page, one per amplifier.
