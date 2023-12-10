@@ -21,7 +21,7 @@ Python version 3.4 or higher required & Domoticz version 3.7xxx or greater.
 To install:
 * Go in your Domoticz directory, open the plugins directory.
 * Navigate to the directory using a command line
-* Run: ```git clone https://github.com/dnpwwo/Domoticz-Denon-Plugin.git```
+* Run: ```git clone https://github.com/dnpwwo/Domoticz-DenonEx-Plugin.git```
 * Restart Domoticz.
 
 In the web UI, navigate to the Hardware page.  In the hardware dropdown there will be an entry called "Denon/Marantz Amplifier".
@@ -29,7 +29,7 @@ In the web UI, navigate to the Hardware page.  In the hardware dropdown there wi
 ## Updating
 
 To update:
-* Go in your Domoticz directory using a command line and open the plugins directory then the Domoticz-Denon-Plugin directory.
+* Go in your Domoticz directory using a command line and open the plugins directory then the Domoticz-DenonEx-Plugin directory.
 * Run: ```git pull```
 * Restart Domoticz.
 
@@ -50,3 +50,4 @@ To update:
 | Version | Information|
 | ----- | ---------- |
 | 4.0.0 | Initial upload version |
+| 4.0.1 | Bugfix: Main zone selector not working |

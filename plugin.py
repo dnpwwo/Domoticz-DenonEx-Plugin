@@ -6,7 +6,7 @@
 #   Mode4 ("Sources") needs to have '|' delimited names of sources that the Denon knows about.  The Selector can be changed afterwards to any  text and the plugin will still map to the actual Denon name.
 #
 """
-<plugin key="DenonEx" version="4.0.0" name="Denon/Marantz Amplifier" author="dnpwwo,bvr" wikilink="" externallink="http://www.denon.co.uk/uk">
+<plugin key="DenonEx" version="4.0.1" name="Denon/Marantz Amplifier" author="dnpwwo,bvr" wikilink="" externallink="http://www.denon.co.uk/uk">
     <description>
 Denon (& Marantz) AVR/AVC Plugin.<br/><br/>
 &quot;Sources&quot; need to have '|' delimited names of sources that the Denon knows about from the technical manual.<br/>
@@ -120,7 +120,7 @@ class selectorUnit(zoneUnit): # Selector switch onCommand Handler
     def onCommand(self, Command, Level, Hue):
         global denonConn,selectorMap
         zoneAbbrev,Command,delay = self.preCommand(Command)
-        denonConn.Send(Message=zoneAbbrev+selectorMap[Level].upper()+'\r', Delay=delay)
+        denonConn.Send(Message=(zoneAbbrev if zoneAbbrev != "ZM" else "SI")+selectorMap[Level].upper()+'\r', Delay=delay)
 
 class volumeUnit(zoneUnit):   # Volume switch onCommand Handler
 
